@@ -17,6 +17,9 @@ export default function DayList(){
   //   })
   // },[])//의존성 배열
   const days = useFetch('http://localhost:3001/days')
+  if(days.length===0){
+    return <span>Loading...</span>
+  }
   function onClick(){
     setCount(count+1)
   }
