@@ -1,0 +1,28 @@
+설명 레이아웃
+1. React Router 설명
+2. JSON-server, REST API
+3. useEffect, fetch()로 API호출
+4. Custom Hooks
+5. PUT(수정), DELETE(삭제)
+
+
+npm install -g json-server
+json-server --watch ./src/db/data.json --port 3001
+
+REST API
+
+Create : POST(추가)
+Read   : GET (읽기)
+Update: PUT (수정)
+Delete : DELETE (삭제)
+
+http://localhost:3001/words?day=3
+
+DayList.js 수정
+function DayList() 에
+const [days, setDays] = useState([]) 추가
+useEffect(()=>{
+	console.log('change')
+})
+useEffect 함수가 호출된 타이밍은 랜더링 결과가 실제 DOM반영된 직후, 컴포넌트가 사라지기 직전에도 호출됨
+onClick으로 count함수 추가후 직접 console.log('Count Change')

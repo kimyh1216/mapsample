@@ -1,0 +1,76 @@
+a {
+  text-decoration: none;
+  color:#333;
+}
+ol,ul{margin:0;padding: 0;list-style: none;}
+button {padding:10px 20px;font-size: 20px;background-color:dodgerblue;border:0;border-radius: 10px;color:#fff}
+.header{
+  position:relative;
+}
+.header .menu{
+  position: absolute;
+  right:0;
+  top:10px;
+}
+.header .link{
+  border: 1px solid #333;
+  padding: 10px;
+  margin-left: 10px;
+  background-color: #ccc;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.list_day {
+  display:flex;
+  flex-wrap:wrap;
+}
+.list_day li{
+  flex: 20% 0;
+  box-sizing:border-box;
+  padding: 10px;
+}
+.list_day a{
+  display: block;
+  padding: 20px 0;
+  font-weight: bold;
+  color:#fff;
+  text-align:center;
+  border-radius: 10px;
+  background-color: dodgerblue;
+}
+table{
+  border-collapse: collapse;
+  width:100%;
+}
+table td{
+  width:25%;
+  height:70px;
+  border: 1px solid #ccc;
+  text-align: center;
+  font-size: 26px;
+}
+table td:first-child{
+  width:10%;
+}
+.off td {
+  background-color: #eee;
+  color: #bbb;
+}
+.input_area{
+  margin-bottom: 10px;
+}
+.input_area label{
+  display: block;
+  margin-bottom: 10px;
+}
+.input_area input{
+  width:400px;
+  height:40px;
+  font-size: 20px;
+  padding: 0 10px;
+}
+.input_area select{
+  width:400px;
+  height: 40px;
+  font-size: 20px;
+}
