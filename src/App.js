@@ -18,6 +18,7 @@ function App() {
         <Route path="/create_word" element={<CreateWord />} />
         <Route path="/create_day" element={<CreateDay />} />
         <Route path="*" element={<EmptyPage />} />
+        test
       </Routes>
     </div>
     </BrowserRouter>
